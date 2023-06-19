@@ -1,0 +1,132 @@
+
+/* RESET STYLES */
+@import url("reset.css");
+body {
+   background-color: var(--background-color);
+   font-family: "Poppins";
+   font-weight: 300;
+   color:var(--gray-100);
+}
+
+:root {
+   --background-color:rgb(13, 13, 17);
+   --white:rgb(255, 255, 255);
+   --btn-blue:rgba(61, 150, 244, 1);
+   --btn-blue-hover: rgb(110, 177, 249);
+   --gray-100:rgba(156, 156, 156, 1);
+   --gray-30:rgba(129, 129, 139, 0.3);
+}
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: clip;
+}
+.container{
+   max-width: 1310px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.button {
+   display: inline-block;
+   background-color: var(--btn-blue);
+   color: var(--white);
+   border-radius: 50px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.43;
+   letter-spacing: 2px;
+   padding: 16px 30px;
+   transition: background-color 300ms ease 0s;
+}
+.button:hover {
+   background-color: var(--btn-blue-hover);
+}
+
+/* HEADER CLASES */
+.header {}
+
+.header-container {
+   display: flex;
+   align-items: center;
+   min-height: 116px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   column-gap: 35px;
+}
+.header-logo {}
+
+.header-menu {
+   flex: 1 1 auto;
+}
+
+.menu {}
+
+.menu-icon {}
+
+.icon-menu {
+   display: none;
+}
+
+.menu-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+   column-gap: 35px;
+   row-gap: 3px;
+}
+
+.menu-item {
+   font-size: 16px;
+   line-height: 1.6;
+   color: var(--white);
+}
+.menu-item:hover {
+   text-decoration: underline;
+}
+
+.menu-link {}
+
+.header-cart {}
+
+.cart-header {
+   color: var(--white);
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+.cart-header:hover .cart-header-text {
+   text-decoration: underline;
+}
+
+.cart-header-text {
+   font-size: 18px;
+   line-height: 1.55;
+   color: var(--white);
+}
+
+.cart-header-quantity {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--gray-30);
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   font-size: 14px;
+   line-height: 1;
+   font-weight: 500;
+}
+
+.header-button {}
+
+
+
+
+
+
+
+.page {
+   flex: 1 1 auto;
+}
