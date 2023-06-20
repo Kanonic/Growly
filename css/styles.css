@@ -16,6 +16,7 @@ body {
    --btn-blue-hover: rgb(110, 177, 249);
    --gray-100:rgba(156, 156, 156, 1);
    --gray-30:rgba(129, 129, 139, 0.3);
+   --gray-20:rgba(129, 129, 139, 0.2);
 }
 .wrapper {
    min-height: 100%;
@@ -43,6 +44,15 @@ body {
 }
 .button:hover {
    background-color: var(--btn-blue-hover);
+}
+
+.dark-button {
+   background-color: var(--gray-20);
+
+}
+.dark-button:hover {
+   background-color: var(--gray-100);
+
 }
 @media (max-width: 991.98px) {
    .button {
@@ -260,12 +270,39 @@ body {
 }
 /* MAIN CLASES */
 
-
-
-
-
-
-
 .page {
    flex: 1 1 auto;
+}
+.page-main {}
+
+.main {
+   padding-top: 160px;
+}
+.main-container{
+   display: flex;
+
+}
+
+.main-content {}
+
+.main-title {}
+
+.main-text {}
+
+.main-actions {}
+
+.main-button {}
+
+.dark-button {}
+
+.main-images {}
+@media (max-width: 991.98px) {
+   .main {
+      padding-top: 120px;
+   }
+}
+@media (max-width: 767.98px) {
+   .main {
+      padding-top: 100px;
+   }
 }
