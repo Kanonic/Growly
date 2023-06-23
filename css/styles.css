@@ -41,6 +41,9 @@ body {
 .page__clients {}
 
 .page__servises {}
+
+.page__testimonials {}
+
 .button {
    display: inline-block;
    background-color: var(--btn-blue);
@@ -107,13 +110,25 @@ body {
    margin-bottom: 33px;
 }
 
+.header-main__body {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.header-main__body .header-main__text {
+   margin: 0;
+}
+
 .header-main__actions {
    display: flex;
    column-gap: 32px;
    row-gap: 15px;
 }
 
-.header-main__button {}
+.header-main__button {
+
+}
 
 .header-main__list li {
    position: relative;
@@ -753,5 +768,54 @@ body {
    }
    .advantages__item {
       max-width: none;
+   }
+}
+
+/* TESTIMONIAL-SECTION CLASES */
+
+.testimonials {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.testimonials__container {}
+
+.testimonials__header {}
+
+.testimonials__items {}
+
+.testimonials__item {}
+
+.item-testimonial {}
+
+.item-testimonial__user {}
+
+.user-testimonial {}
+
+.user-testimonial__avatar {}
+
+.user-testimonial__body {}
+
+.user-testimonial__title {}
+
+.user-testimonial__company {}
+
+.item-testimonial__title {}
+
+.item-testimonial__text {}
+
+.item-testimonial__reiting {}
+
+@media (max-width: 991.98px) {
+   .testimonials {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .testimonials {
+      padding-top: 30px;
+      padding-bottom: 30px;
    }
 }
